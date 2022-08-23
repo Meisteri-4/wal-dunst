@@ -1,0 +1,21 @@
+#!/bin/bash
+
+kill -9 $(pidof dunst)
+
+# Source wal colors
+[ -f "$HOME/.cache/wal/colors.sh" ] && . "$HOME/.cache/wal/colors.sh"
+
+export \
+         low_background="${background}" \
+         low_foreground="${foreground}" \
+        low_frame_color="${color1}" \
+      normal_background="${background}" \
+      normal_foreground="${foreground}" \
+     normal_frame_color="${color1}" \
+    critical_background="${color6}" \
+    critical_foreground="${color7}" \
+   critical_frame_color="${color8}"
+
+envsubst < "$HOME/.config/dunst/template_dunstrc" > "$HOME/.config/dunst/dunstrc"
+
+dunst -s -follow-keyboard & disown
