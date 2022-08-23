@@ -1,0 +1,26 @@
+[global]
+  font = Monospace 8
+  width = 300
+  height = 300
+  offset = 10x50
+  separator_height = 2
+  padding = 8
+  horizontal_padding = 8
+  frame_width = 3
+  max_icon_size = 32
+
+[urgency_low]
+  background = "${low_background}"
+  foreground = "${low_foreground}"
+  frame_color = "${low_frame_color}"
+
+[urgency_normal]
+  background = "${normal_background}"
+  foreground = "${normal_foreground}"
+  frame_color = "${normal_frame_color}"
+
+[urgency_critical]
+  background = "${critical_background}"
+  foreground = "${critical_foreground}"
+  frame_color = "${critical_frame_color}"
+  
