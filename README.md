@@ -4,10 +4,12 @@ Switches dunst colors according to wal.
 # Instructions
 > :warning: **This script will overwrite your `dunstrc` !**
 
-Make sure `dunst` and `wal` or `pywal` is installed.
+Make sure `dunst` and either `wal` or `pywal` is installed.
 
-Execute `update_dunstrc` after every `wal` change.
+Copy `update_dunstrc` and `template_dunstrc` to `~/.config/dunst/`
 
-`template_dunstrc` should be kept in `~/.config/dunst`.
+`$ chmod +x ~/.config/dunst/update_dunstrc`
+
+Execute `update_dunstrc` after updating `wal` colors.
 
 Color configuration is done through `update_dunstrc`. Everything else is configured through `template_dunstrc`.
