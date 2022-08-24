@@ -12,4 +12,8 @@ Copy `update_dunstrc` and `template_dunstrc` to `~/.config/dunst/`
 
 Execute `update_dunstrc` after updating `wal` colors.
 
-Color configuration is done through `update_dunstrc`. Everything else is configured through `template_dunstrc`.
+Color configuration is done through `update_dunstrc`. Look at `~/.cache/wal/colors.sh` for available colors. 
+
+Hex color strings are also valid.
+
+Everything else is configured through `template_dunstrc`.
