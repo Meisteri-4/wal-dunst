@@ -12,9 +12,9 @@ export \
       normal_background="${background}" \
       normal_foreground="${foreground}" \
      normal_frame_color="${color1}" \
-    critical_background="${color6}" \
-    critical_foreground="${color7}" \
-   critical_frame_color="${color8}"
+    critical_background="#000000" \
+    critical_foreground="#ffffff" \
+   critical_frame_color="#c61a09"
 
 envsubst < "$HOME/.config/dunst/template_dunstrc" > "$HOME/.config/dunst/dunstrc"
 
